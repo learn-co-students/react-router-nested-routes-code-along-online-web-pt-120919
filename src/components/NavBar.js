@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
@@ -10,6 +11,7 @@ const NavBar = () => {
       >
         Home
       </NavLink>
+      
       <NavLink 
         style={{ marginRight: '10px' }} 
         to="/movies"
