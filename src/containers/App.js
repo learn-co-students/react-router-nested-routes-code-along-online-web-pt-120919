@@ -21,7 +21,10 @@ class App extends Component {
       <Router>
         <div>
           <NavBar />
+          {/* with render, instead of passing in a component we pass a function */}
           <Route exact path="/" render={() => <div>Home</div>} />
+
+          {/* routerProps - function argument - an Object */}
           <Route path='/movies' render={routerProps => <MoviesPage {...routerProps} movies={this.state.movies}/>} />
         </div>
       </Router>
